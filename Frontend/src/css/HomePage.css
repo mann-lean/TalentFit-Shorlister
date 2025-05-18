@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Container */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.space-x-4 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Heading */
+.Heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #222;
+  max-width: 600px;
+}
+
+body.dark .Heading {
+  color: #ffffff;
+}
+
+/* Pink Text */
+.text-pink-500 {
+  color: #6b46c1;
+}
+
+/* Paragraph */
+.text-gray-600 {
+  color: #4b5563;
+  font-size: 1.125rem;
+  max-width: 460px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+body.dark .text-gray-600 {
+  color: #d1d5db;
+}
+
+/* Buttons */
+.ShortList-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ShortList-btn:hover {
+  background-color: #6b46c1;
+  color: #fff;
+}
+
+body.dark .ShortList-btn {
+  background-color: #f1f1f1;
+  color: #121212;
+}
+body.dark .ShortList-btn:hover {
+  background-color: #6b46c1;  /* Your intended purple */
+  color: #ffffff;
+}
+
+
+/* Login button */
+button.bg-white {
+  background-color: #ffffff;
+  border: 2px solid #d1d5db;
+  color: #374151;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+button.bg-white:hover {
+  border-color: #ec4899;
+  color: #ec4899;
+}
+
+body.dark button.bg-white {
+  background-color: #222;
+  border-color: #555;
+  color: #f1f1f1;
+}
+
+body.dark button.bg-white:hover {
+  border-color: #90cdf4;
+  color: #90cdf4;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .Heading {
+    font-size: 1.75rem;
+    max-width: 90vw;
+    padding: 0 1rem;
+  }
+
+  .text-gray-600 {
+    max-width: 90vw;
+    font-size: 1rem;
+  }
+
+  .space-x-4 {
+    flex-direction: column;
+    space-x: 0;
+  }
+
+  .space-x-4 > * {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .ShortList-btn,
+  button.bg-white {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+  }
+}

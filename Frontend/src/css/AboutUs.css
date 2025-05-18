@@ -1,0 +1,73 @@
+/* General Styles */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e7f3ff, #ffffff);
+  padding: 20px;
+}
+
+.about-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #3b82f6;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.feature-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,63 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode background */
+body.dark .navbar {
+  background-color: #1a202c;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+/* Logo styles */
+.logo img {
+  height: 48px;
+  width: 120px;
+  transition: height 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Light mode nav links */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6b46c1;
+}
+
+/* Toggle icon */
+.toggle-icon {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Dark mode nav links */
+body.dark .nav-links a {
+  color: #f1f1f1;
+}
+
+body.dark .nav-links a:hover {
+  color: #b794f4;
+}

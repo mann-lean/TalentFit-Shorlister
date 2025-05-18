@@ -1,0 +1,41 @@
+/* Base dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Inputs and textarea */
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background-color: #1e1e1e; /*job description*/
+  color: white; /*job description*/
+  border: 1px solid #555;
+}
+
+/* Buttons */
+body.dark button {
+  background-color: #333;
+  color: #f1f1f1;
+  border: none;
+}
+
+/* Navbar */
+body.dark .navbar {
+    color: white;
+  background-color: #1a1a1a; /*navbar*/
+  border-bottom: 1px solid #444;
+}
+
+/* Card/Box components */
+body.dark .card,
+body.dark .resume-box,
+body.dark .container,
+body.dark .dashboard {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+}
+html {
+  scroll-behavior: smooth;
+}

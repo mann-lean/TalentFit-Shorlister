@@ -1,0 +1,159 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Light mode defaults */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+/* Dark mode base styles */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Page layout */
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+/* Resume Card */
+.resume-card {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.resume-card.selected {
+  border-color: green;
+}
+
+/* Resume Info Flex Row */
+.resume-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox {
+  margin-right: 8px;
+}
+
+/* Button Styles */
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* View PDF */
+.bg-gray-200 {
+  background-color: #e2e8f0;
+  color: #333;
+}
+
+.bg-gray-200:hover {
+  background-color: #cbd5e0;
+}
+
+/* Proceed Button */
+.bg-blue-600 {
+  background-color: #3182ce;
+  color: white;
+}
+
+.bg-blue-600:hover {
+  background-color: #2b6cb0;
+}
+
+.view-pdf-btn {
+  margin-left: auto;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+
+  .resume-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .view-pdf-btn {
+    align-self: flex-end;
+  }
+}
+
+/* DARK MODE OVERRIDES */
+body.dark .resume-card {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #f1f1f1;
+}
+
+body.dark .resume-card.selected {
+  border-color: limegreen;
+}
+
+body.dark .resume-label strong {
+  color: #ffffff;
+}
+
+body.dark .bg-gray-200 {
+  background-color: #2d3748;
+  color: #f1f1f1;
+}
+
+body.dark .bg-gray-200:hover {
+  background-color: #4a5568;
+}
+
+body.dark .bg-blue-600 {
+  background-color: #3182ce;
+  color: white;
+}
+
+body.dark .bg-blue-600:hover {
+  background-color: #2b6cb0;
+}
