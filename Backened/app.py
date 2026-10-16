@@ -68,7 +68,7 @@ def send_selection_email(name, email):
 
 
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-            smtp.login('mannlearn210@gmail.com', 'ozfm jvwb djgl mkzt')  # Use app password!
+            smtp.login('xyz@gmail.com', 'password')  # add here smtp email & password!
             smtp.send_message(msg)
 
         return True
