@@ -17,23 +17,23 @@ In today’s fast-paced recruitment environment, Human Resource (HR) professiona
 
 __Home Page__
 
-![App Demo](artifacts\img\homePage.png)  
+![App Demo](artifacts/img/homePage.png)  
 
 __Inserting Resumes__
 
-![App Demo](artifacts\img\UploadFIles.png)
+![App Demo](artifacts/img/UploadFIles.png)
 
 __Adding JD__
 
-![App Demo](artifacts\img\UploadingJD.png)
+![App Demo](artifacts/img/UploadingJD.png)
 
 __Selecting Candidates & Reaching out__
 
-![App Demo](artifacts\gif\SelctingReachingOut.gif)
+![App Demo](artifacts/gif/SelctingReachingOut.gif)
 
 __Automation Email Reach out__
 
-![App Demo](artifacts\img\emailRecv.png)
+![App Demo](artifacts/img/emailRecv.png)
 
 ## ✨ Key Features
 * **Bulk PDF Parsing:** Seamlessly extract and clean textual content from multiple uploaded PDF resumes using `pdfminer`.
