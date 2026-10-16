@@ -1,0 +1,10 @@
+Flask
+pymongo
+PyMuPDF
+scikit-learn
+flask-cors
+smtplibsklearn
+sentence-transformers
+transformers
+numpy
+pandas
