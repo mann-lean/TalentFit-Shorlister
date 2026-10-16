@@ -50,6 +50,46 @@ __Automation Email Reach out__
 4. **Ranking:** Resumes are ordered by their similarity scores and returned to the frontend.
 5. **Automation:** Upon HR selection, the backend extracts candidate emails and triggers SMTP notifications.
 
+## 📁 Repository Structure
+
+```text
+TalentFit-Shorlister/
+│
+├── Backend/                   # Python / Flask API and NLP Engine
+│   ├── app.py                 # Main application server and API routes
+│   ├── uploaded_resumes/      # dumping pdf
+│   ├── resume_processing      # presume preprocessing(extracting,embedding,cosine similarity/BERT)
+│
+├── database/                  # Python / Flask API and NLP Engine
+│   ├── db_config.py           # Initialize resume connection using Mongo
+│   ├── hr_decision.py         # hr decision saving
+│   ├── save_resumes.py        # Ranked Resumes saved in database
+│
+├── Frontend/                  # React.js User Interface
+│   ├── public/                # Static assets
+|       ├── index.html
+|       ├── manifest.json
+|       ├── robots.txt
+|       ├── talentFit_logo.png # app icon
+│   ├── src/
+│   │   ├── assets/            # UI components (Upload form, Ranking Table)
+│   │   ├── components/        # UI components (Upload form, Ranking Table)
+│   │   ├── css/               # UI components css (Upload form, Ranking Table)
+│   │   ├── pages/             # home page
+│   │   ├── App.js             # Main React application
+│   │   ├── index.css          # Main React css
+│   │   ├── index.js             # Main React js
+│   │   ├── reportWebVitals.js           
+│   │   ├── setupTests.js             # Main React application
+│   └── package.json           # Node.js dependencies
+│
+├── uploaded_resumes/          # (Optional) Sample resumes and JD for testing
+├── README.md                  # Project documentation
+└── .gitignore                 # Ignored files (node_modules, venv, .env)
+└── requirements.txt           # library dependencies
+
+```
+
 ## 🛠️ Tech Stack
 * **Frontend:** React.js
 * **Backend:** Python (Flask/FastAPI)
